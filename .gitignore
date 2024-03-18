@@ -161,9 +161,9 @@ cython_debug/
 
 # Custom folders
 samples/
-augmented/augmented_data
-augmented/augmented_data_test
-augmented/output
+augmentation/augmented_data
+augmentation/augmented_data_test
+augmentation/output
 moved/
 my_clean/
 one_second_samples/
