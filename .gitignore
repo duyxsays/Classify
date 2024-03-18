@@ -164,3 +164,8 @@ samples/
 augmented/augmented_data
 augmented/augmented_test
 augmented/output
+moved/
+my_clean/
+one_second_samples/
+redacted/
+Audio-Classification/
