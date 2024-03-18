@@ -162,7 +162,7 @@ cython_debug/
 # Custom folders
 samples/
 augmented/augmented_data
-augmented/augmented_test
+augmented/augmented_data_test
 augmented/output
 moved/
 my_clean/
