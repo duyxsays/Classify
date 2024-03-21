@@ -1,32 +1,19 @@
 import numpy as np
 import gradio as gr
-import torchaudio
-import librosa
 from transformers import pipeline
 
 pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-bass-test")
 
 def classify_audio(audio):
-    
     sr, data = audio
-    print(data)
-    print(data.shape)
-    modified_array = np.delete(data, 1, axis=1)
+
+    modified_array = np.delete(data, 1, axis=1) # deleting the second column
     
-    float_array = np.float32(modified_array)
-    print(float_array)
+    waveform_np = float_array.flatten() # flatten the array for mono signal
+
+    float_array = np.float32(modified_array) # convert to float32
     
-    #waveform_np = np.array(data)
-
-    # Resample the audio to 16000 Hz if necessary
-    # if sr != 16000:
-    #    data = librosa.resample(data, sr, 16000)
-
-    waveform_np = float_array.flatten()
-    print(waveform_np)
-    result = pipe(waveform_np)
-
-    print(result)
+    result = pipe(waveform_np) # predicting the class
 
     return result
 
@@ -48,8 +35,3 @@ demo = gr.Interface(
 )
 
 demo.launch()
-
-#examples=[
-#        "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
-#        os.path.join(os.path.dirname(__file__), "audio/recording1.wav"),
-#    ],
