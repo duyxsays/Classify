@@ -5,8 +5,6 @@ import soundfile as sf
 import os
 import shutil
 import seaborn as sns
-import sys
-import time
 
 # MARK: Augmentation methods ---------------------------------------------------------------
 def polarity_invert_samples(input, output, category, progress, total):

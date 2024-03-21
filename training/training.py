@@ -1,4 +1,5 @@
 # %%
+# import libraries
 import numpy as np
 from transformers import AutoModelForAudioClassification, AutoFeatureExtractor
 from datasets import load_dataset
@@ -7,15 +8,19 @@ from datasets import load_dataset
 # create my dataset using the audiofolder builder from datasets library
 dataset = load_dataset("audiofolder", data_dir="/Users/duyx/Code/Classify/augmentation/augmented_data_test")
 # %%
-dataset["train"][-1]
-# %%
+# print the dictionary
 dataset
 # %%
+# print the last element of the dictionary
+dataset["train"][-1]
+# %%
+# make a train-test split of the dataset
 dataset = dataset["train"].train_test_split(seed=42, shuffle=True, test_size=0.1)
 # %%
+# print the train dataset
 dataset["train"][0]
 # %%
-
+# extract features from the pretrained model
 model_id = "ntu-spml/distilhubert"
 feature_extractor = AutoFeatureExtractor.from_pretrained(
     model_id, do_normalize=True, return_attention_mask=True
