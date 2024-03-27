@@ -163,10 +163,6 @@ cython_debug/
 samples/
 augmentation/data
 augmentation/output
-moved/
-my_clean/
-one_second_samples/
-redacted/
 Audio-Classification/
 training_samples/
 evaluate/
