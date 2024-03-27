@@ -163,6 +163,7 @@ cython_debug/
 samples/
 augmentation/augmented_data
 augmentation/augmented_data_test
+augmentation/augmented_bass_data
 augmentation/output
 moved/
 my_clean/
