@@ -1,6 +1,8 @@
 # import libraries
 import matplotlib.pyplot as plt
 import librosa as lr
+import numpy as np
+import pandas as pd
 import soundfile as sf
 import os
 import shutil
@@ -16,12 +18,15 @@ def polarity_invert_samples(input, output, category, progress, total):
     for sample in os.listdir(input):
         signal, sr = lr.load(os.path.join(input, sample), sr=16000, mono=True)
         
+        
         augmented_audio = signal * -1
         output_path = os.path.join(output, 'inverted_' + sample)
         copy_path = os.path.join(output, sample)
         
-        sf.write(output_path, augmented_audio, sr)
-        sf.write(copy_path, signal, sr)
+        mask, env = envelope(augmented_audio, sr, 0.01)
+        
+        sf.write(output_path, augmented_audio[mask], sr)
+        sf.write(copy_path, signal[mask], sr)
         
         i += 1
         write_progress(i, total_samples, " - Polarity inverting", category, progress, total)
@@ -39,7 +44,10 @@ def pitch_shift_samples(input, output, category, progress, total):
         for semitone in semitones:
             augmented_audio = lr.effects.pitch_shift(y=signal, sr=sr, n_steps=semitone)
             output_path = os.path.join(output, 'pitch_shift_' + str(semitone) + '_' + sample)
-            sf.write(output_path, augmented_audio, sr)
+
+            mask, env = envelope(augmented_audio, sr, 0.01)
+
+            sf.write(output_path, augmented_audio[mask], sr)
 
             i += 1
             write_progress(i, total_samples, " - Pitch shifting", category, progress, total)
@@ -59,8 +67,10 @@ def time_stretch_samples(input, output, category, progress, total):
         for rate in rates:
             augmented_audio = lr.effects.time_stretch(y=signal, rate=rate)
             output_path = os.path.join(output, 'time_stretch_' + str(rate) + '_' + sample)
+
+            mask, env = envelope(augmented_audio, sr, 0.01)
             
-            sf.write(output_path, augmented_audio, sr)
+            sf.write(output_path, augmented_audio[mask], sr)
 
             i += 1
             write_progress(i, total_samples, " - Time stretching", category, progress, total)
@@ -97,6 +107,19 @@ def reduce_samples(output):
             
 
 # MARK: Supporting ---------------------------------------------------------------
+def envelope(y, rate, threshold):
+    mask = []
+    y = pd.Series(y).apply(np.abs)
+    y_mean = y.rolling(window=int(rate/20),
+                       min_periods=1,
+                       center=True).max()
+    for mean in y_mean:
+        if mean > threshold:
+            mask.append(True)
+        else:
+            mask.append(False)
+    return mask, y_mean
+
 def handle_directory(directory):
     if not os.path.exists(directory):
         os.mkdir(directory)
