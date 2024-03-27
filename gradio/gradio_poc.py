@@ -1,6 +1,7 @@
 import numpy as np
 import gradio as gr
 from transformers import pipeline
+# gradio - env
 
 pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-bass-test")
 
@@ -9,9 +10,9 @@ def classify_audio(audio):
 
     modified_array = np.delete(data, 1, axis=1) # deleting the second column
     
-    waveform_np = float_array.flatten() # flatten the array for mono signal
+    waveform_np = modified_array.flatten() # flatten the array for mono signal
 
-    float_array = np.float32(modified_array) # convert to float32
+    waveform_np = np.float32(waveform_np) # convert to float32
     
     result = pipe(waveform_np) # predicting the class
 

@@ -1,12 +1,12 @@
 # %%
-# import libraries
+# import libraries - class env
 import numpy as np
 from transformers import AutoModelForAudioClassification, AutoFeatureExtractor
 from datasets import load_dataset
 
 # %%
 # create my dataset using the audiofolder builder from datasets library
-dataset = load_dataset("audiofolder", data_dir="/Users/duyx/Code/Classify/augmentation/augmented_data_test")
+dataset = load_dataset("audiofolder", data_dir="/Users/duyx/Code/Classify/augmentation/augmented_bass_data")
 # %%
 # print the dictionary
 dataset
@@ -77,9 +77,6 @@ label2id = {v: k for k, v in id2label.items()}
 id2label["0"]
 
 
-# %% 
-
 # %%
-dataset_encoded.push_to_hub("TheDuyx/bass_design_encoded")
+dataset_encoded.push_to_hub("TheDuyx/bass_data")
 
-# %%

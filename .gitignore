@@ -169,3 +169,5 @@ my_clean/
 one_second_samples/
 redacted/
 Audio-Classification/
+training_samples/
+evaluate/
