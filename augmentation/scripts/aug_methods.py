@@ -19,13 +19,13 @@ def polarity_invert_samples(input, output, category, progress, total):
         signal, sr = lr.load(os.path.join(input, sample), sr=16000, mono=True)
         
         
-        augmented_audio = signal * -1
+        inverted_audio = signal * -1
         output_path = os.path.join(output, 'inverted_' + sample)
         copy_path = os.path.join(output, sample)
         
-        mask, env = envelope(augmented_audio, sr, 0.01)
+        mask, env = envelope(inverted_audio, sr, 0.01)
         
-        sf.write(output_path, augmented_audio[mask], sr)
+        sf.write(output_path, inverted_audio[mask], sr)
         sf.write(copy_path, signal[mask], sr)
         
         i += 1
@@ -42,12 +42,12 @@ def pitch_shift_samples(input, output, category, progress, total):
         signal, sr = lr.load(os.path.join(input, sample), sr=16000, mono=True)
 
         for semitone in semitones:
-            augmented_audio = lr.effects.pitch_shift(y=signal, sr=sr, n_steps=semitone)
+            shifted_audio = lr.effects.pitch_shift(y=signal, sr=sr, n_steps=semitone)
             output_path = os.path.join(output, 'pitch_shift_' + str(semitone) + '_' + sample)
 
-            mask, env = envelope(augmented_audio, sr, 0.01)
+            mask, env = envelope(shifted_audio, sr, 0.01)
 
-            sf.write(output_path, augmented_audio[mask], sr)
+            sf.write(output_path, shifted_audio[mask], sr)
 
             i += 1
             write_progress(i, total_samples, " - Pitch shifting", category, progress, total)
@@ -65,12 +65,12 @@ def time_stretch_samples(input, output, category, progress, total):
         signal, sr = lr.load(os.path.join(input, sample), sr=16000) 
 
         for rate in rates:
-            augmented_audio = lr.effects.time_stretch(y=signal, rate=rate)
+            stretched_audio = lr.effects.time_stretch(y=signal, rate=rate)
             output_path = os.path.join(output, 'time_stretch_' + str(rate) + '_' + sample)
 
-            mask, env = envelope(augmented_audio, sr, 0.01)
+            mask, env = envelope(stretched_audio, sr, 0.01)
             
-            sf.write(output_path, augmented_audio[mask], sr)
+            sf.write(output_path, stretched_audio[mask], sr)
 
             i += 1
             write_progress(i, total_samples, " - Time stretching", category, progress, total)

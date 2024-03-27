@@ -24,7 +24,7 @@ shifted = '/Users/duyx/Code/Classify/augmentation/output/pitch_shifted'
 stretched = '/Users/duyx/Code/Classify/augmentation/output/time_stretched/'
 
 # reference to the destination folder
-augmented_root = '/Users/duyx/Code/Classify/augmentation/augmented_bass_data'
+augmented_root = '/Users/duyx/Code/Classify/augmentation/data/augmented_bass_data'
 
 # %%
 # run the entire augmentation process
