@@ -7,8 +7,8 @@
 ## Current results
 ### Accuracy
 ```
-Correct guesses: 64 out of 85
-Accuracy: 75.29411764705883%
+Correct guesses: 72 out of 95
+Accuracy: 75.78947368421053%
 ```
 
 ### slap
@@ -44,6 +44,18 @@ Accuracy: 75.29411764705883%
 - ❌: jump_up / brass - tp_macky_gee_bass_one_shot_mg_vomit_F.wav
 - ❌: jump_up / brass - tp_macky_gee_bass_one_shot_mg_who_knows_this_F.wav
 - ❌: jump_up / growl - tp_macky_gee_bass_one_shot_poke_F.wav
+
+### acid
+- ✅: acid / acid - Acid_1.wav
+- ❌: acid / slap - GHD_Kit2_acid_shot_126_G#_minor.wav
+- ✅: acid / acid - OS_SLT_C_Acid_Hit__Low_.wav
+- ✅: acid / acid - PLX_ACT_synth_blade_Eb.wav
+- ✅: acid / acid - PLX_ACT_synth_crisp_F.wav
+- ❌: acid / growl - PLX_ACT_synth_ear_F.wav
+- ✅: acid / acid - RU_IA_squelch_bass_C.wav
+- ✅: acid / acid - TL_Bass_07.wav
+- ✅: acid / acid - plx_itt_synth_acid_growl_#D.wav
+- ✅: acid / acid - shs_rs_acid_shot_4_B.wav
 
 ### brass
 - ✅: brass / brass - BOS_ADJ_Bass_Synth_One_Shot_Mellow_F.wav
