@@ -1,11 +1,11 @@
 # %% 
-# import libraries - env augment
+# import libraries - activate augment
 import aug_methods as am # own package
 import os
 
 # %% 
 # list categories
-root = '/Users/duyx/Code/Classify/training_samples/'
+root = '/Users/duyx/Code/Classify/data/training_samples/'
 
 am.delete_ds_store(root)
 
@@ -28,12 +28,12 @@ category_dir = os.path.join(root, selected_category)
 
 # %%
 # read sample directories
-inverted = '/Users/duyx/Code/Classify/augmentation/output/inverted'
-shifted = '/Users/duyx/Code/Classify/augmentation/output/pitch_shifted'
-stretched = '/Users/duyx/Code/Classify/augmentation/output/time_stretched/'
+inverted = '/Users/duyx/Code/Classify/main/augmentation/output/inverted'
+shifted = '/Users/duyx/Code/Classify/main/augmentation/output/pitch_shifted'
+stretched = '/Users/duyx/Code/Classify/main/augmentation/output/time_stretched/'
 
 # reference to the destination folder
-augmented_root = '/Users/duyx/Code/Classify/augmentation/data/augmented_bass_data_test'
+augmented_root = '/Users/duyx/Code/Classify/data/augment/augmented_bass_data_test'
 destination = os.path.join(augmented_root, selected_category)
 
 # %%

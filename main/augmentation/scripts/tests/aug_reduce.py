@@ -1,9 +1,6 @@
 # %% Reduce the samples to one second
-
 # import libraries
 import librosa as lr
-import plot_package as pp
-import soundfile as sf
 import os
 
 

@@ -1,4 +1,4 @@
-# import libraries
+# import libraries - activate augment
 import matplotlib.pyplot as plt
 import librosa as lr
 import numpy as np
