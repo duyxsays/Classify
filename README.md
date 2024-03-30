@@ -5,9 +5,10 @@
 - [🍀 Overleaf](https://github.com/ThaDuyx/overleaf)
 
 ## Current results
+### Accuracy
 ```
-Correct guesses: 59 out of 85
-Accuracy: 69.41176470588235%
+Correct guesses: 64 out of 85
+Accuracy: 75.29411764705883%
 ```
 
 ### slap
@@ -19,8 +20,7 @@ Accuracy: 69.41176470588235%
 - ❌: slap / jump_up - DS_DSH_bass_synth_one_shot_light_high_C.wav
 - ❌: slap / jump_up - DS_DSH_bass_synth_one_shot_nothing_to_lose_high_C.wav
 - ✅: slap / slap - DS_SSH_bass_synth_one_shot_boss_slap_C.wav
-- ❌: slap / jump_up - DS_SSH_bass_synth_one_shot_mulner_C.wav
-- ❌: slap / jump_up - DS_VEDMH_bass_slap_one_shot_way_C.wav
+- ✅: slap / slap - DS_VEDMH_bass_slap_one_shot_way_C.wav
 - ✅: slap / slap - FL_SH_Kit01_Bass_One_Shot_Synth.wav
 - ✅: slap / slap - FL_SH_Kit04_Bass_One_Shot_Synth.wav
 - ✅: slap / slap - FL_SH_Kit05_Bass_One_Shot_Synth.wav
@@ -30,17 +30,15 @@ Accuracy: 69.41176470588235%
 - ❌: slap / jump_up - STCR2_VPSH_Bass_One_Shot_Anthem_F.wav
 - ❌: slap / jump_up - STCR2_VPSH_Bass_One_Shot_Gravity_A.wav
 - ✅: slap / slap - TRKTRN_CSH_Bass_One_Shot_Anomaly_D#.wav
-- ❌: slap / jump_up - TRKTRN_CSH_Bass_One_Shot_Headshot_G.wav
 - ✅: slap / slap - TRKTRN_CSH_Bass_One_Shot_Kola_G.wav
 - ✅: slap / slap - TRKTRN_CSH_Bass_One_Shot_Orchid_D#.wav
 - ❌: slap / jump_up - TRKTRN_FISH_Bass_One_Shot_Legend_F#.wav
 
 ### jump_up
 - ✅: jump_up / jump_up - BOS_ADJ_Bass_Synth_One_Shot_Dino_E.wav
-- ❌: jump_up / brass - BOS_ADJ_Bass_Synth_One_Shot_Mellow_F.wav
-- ✅: jump_up / jump_up - BOS_ADJ_Bass_Synth_One_Shot_Metallic_E.wav
-- ❌: jump_up / growl - PMHJ_Bass_E_Clunk.wav
-- ❌: jump_up / brass - tp_macky_gee_bass_one_shot_car_horn_F.wav
+- ❌: jump_up / acid - BOS_ADJ_Bass_Synth_One_Shot_Metallic_E.wav
+- ✅: jump_up / jump_up - DS_SSH_bass_synth_one_shot_mulner_C.wav
+- ✅: jump_up / jump_up - TRKTRN_CSH_Bass_One_Shot_Headshot_G.wav
 - ❌: jump_up / growl - tp_macky_gee_bass_one_shot_mg_face_mask_F.wav
 - ✅: jump_up / jump_up - tp_macky_gee_bass_one_shot_mg_i_know_u_F.wav
 - ❌: jump_up / brass - tp_macky_gee_bass_one_shot_mg_vomit_F.wav
@@ -48,6 +46,8 @@ Accuracy: 69.41176470588235%
 - ❌: jump_up / growl - tp_macky_gee_bass_one_shot_poke_F.wav
 
 ### brass
+- ✅: brass / brass - BOS_ADJ_Bass_Synth_One_Shot_Mellow_F.wav
+- ✅: brass / brass - tp_macky_gee_bass_one_shot_car_horn_F.wav
 
 ### sub
 - ✅: sub / sub - 808_VIRGOAPTO.wav
@@ -75,6 +75,7 @@ Accuracy: 69.41176470588235%
 - ✅: growl / growl - HD_bass_growl_howler_F.wav
 - ✅: growl / growl - MLEUC_bass_oneshot_growl_weird_E.wav
 - ✅: growl / growl - MODE_BE2_bass_growl_solow_D#.wav
+- ✅: growl / growl - PMHJ_Bass_E_Clunk.wav
 - ❌: growl / brass - RICKYXSAN_growl_one_shot_06_F.wav
 - ✅: growl / growl - SAMPLIFIRE_bass_one_shot_growl_bounce_back_D#.wav
 - ❌: growl / brass - V_RIOT_bass_standart_growl_02_F.wav
@@ -98,7 +99,7 @@ Accuracy: 69.41176470588235%
 - ✅: 808 / 808 - OS_GIRL_808_C_Bubbly.wav
 - ✅: 808 / 808 - OS_GIRL_808_D#_Crumz.wav
 - ✅: 808 / 808 - OS_GIRL_808_D_Sargent.wav
-- ❌: 808 / reese - OS_GIRL_808_E_Resurrect.wav
+- ❌: 808 / sub - OS_GIRL_808_E_Resurrect.wav
 - ✅: 808 / 808 - OS_GIRL_808_E_Stank.wav
 - ✅: 808 / 808 - OS_GIRL_808_E_Thud.wav
 - ✅: 808 / 808 - OS_GIRL_808_F_Dash.wav

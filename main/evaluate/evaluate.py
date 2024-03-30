@@ -28,7 +28,7 @@ for dir in os.listdir(eval_dir):
     samples.sort()
     amount = service.total_samples(eval_dir)
     
-    file.write(f"\n{dir}\n")
+    file.write(f"\n### {dir}\n")
 
     for sample in samples:
         waveform, sample_rate = torchaudio.load(f"{eval_dir}{dir}/{sample}")
@@ -39,7 +39,7 @@ for dir in os.listdir(eval_dir):
 
         waveform_np = np.array(waveform[0])
 
-        mask, sr = service.envelope(waveform_np, 16000, 0.0005)
+        mask, sr = service.envelope(waveform_np, 16000, 0.1)
         waveform_np = waveform_np[mask]
 
         classification = pipe(waveform_np)
@@ -50,7 +50,7 @@ for dir in os.listdir(eval_dir):
             eval = "✅"
             correct_guesses += 1
 
-        file.write(f"{eval}: {dir} / {result['label']} - {sample}\n")
+        file.write(f"- {eval}: {dir} / {result['label']} - {sample}\n")
 
 print(f"Correct guesses: {correct_guesses} out of {amount}")
 print(f"Accuracy: {correct_guesses / amount * 100}%")
