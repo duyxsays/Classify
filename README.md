@@ -8,24 +8,16 @@
 ### Accuracy
 ```
 Correct guesses: 86 out of 111
-Accuracy: 77.47747747747748%
+Accuracy: 77.48%
 
-slap - 15/21. 
-slap accuracy: 71.42857142857143%
-jump_up - 4/9. 
-jump_up accuracy: 44.44444444444444%
-acid - 8/11. 
-acid accuracy: 72.72727272727273%
-brass - 16/17. 
-brass accuracy: 94.11764705882352%
-sub - 7/7. 
-sub accuracy: 100.0%
-reese - 0/1. 
-reese accuracy: 0.0%
-growl - 16/18. 
-growl accuracy: 88.88888888888889%
-808 - 20/27. 
-808 accuracy: 74.07407407407408%
+slap - 15/21 ~ 71.43%
+jump_up - 4/9 ~ 44.44%
+acid - 8/11 ~ 72.73%
+brass - 16/17 ~ 94.12%
+sub - 7/7 ~ 100.0%
+reese - 0/1 ~ 0.0%
+growl - 16/18 ~ 88.89%
+808 - 20/27 ~ 74.07%
 ```
 
 

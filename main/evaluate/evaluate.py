@@ -56,11 +56,11 @@ for dir in os.listdir(eval_dir):
 
         file.write(f"- {eval}: {dir} / {result['label']} - {sample}\n")
 
-    result_list.append(f"{dir} - {sub_guesses}/{sub_amount}. \n{dir} accuracy: {sub_guesses / sub_amount * 100}%")
+    result_list.append(f"{dir} - {sub_guesses}/{sub_amount} ~ {round(sub_guesses / sub_amount * 100, 2)}%")
 
 file.close()
 print(f"Correct guesses: {correct_guesses} out of {amount}")
-print(f"Accuracy: {correct_guesses / amount * 100}%")
+print(f"Accuracy: {round(correct_guesses / amount * 100, 2)}%\n")
 for i in result_list:
     print(i)
 
