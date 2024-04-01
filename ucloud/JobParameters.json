@@ -1,0 +1,53 @@
+{
+    "siteVersion": 3,
+    "request": {
+        "application": {
+            "name": "coder-cuda",
+            "version": "1.87.2"
+        },
+        "product": {
+            "id": "u1-standard-32",
+            "category": "u1-standard",
+            "provider": "ucloud"
+        },
+        "name": "dev",
+        "replicas": 1,
+        "parameters": {
+            "initialization": {
+                "type": "file",
+                "path": "/900249/training/env.sh",
+                "readOnly": false
+            }
+        },
+        "resources": [
+            {
+                "type": "file",
+                "path": "/900249/Jobs/Coder CUDA/miniconda/miniconda3",
+                "readOnly": false
+            },
+            {
+                "type": "file",
+                "path": "/900249/training",
+                "readOnly": false
+            }
+        ],
+        "timeAllocation": {
+            "hours": 1,
+            "minutes": 0,
+            "seconds": 0
+        },
+        "resolvedProduct": null,
+        "resolvedApplication": null,
+        "resolvedSupport": null,
+        "allowDuplicateJob": true,
+        "sshEnabled": true
+    },
+    "resolvedResources": {
+        "ingress": {
+        }
+    },
+    "machineType": {
+        "cpu": 32,
+        "memoryInGigs": 192
+    }
+}
