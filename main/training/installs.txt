@@ -1,8 +1,0 @@
-conda install scipy
-conda install scikit-learn
-conda install pytorch::pytorch torchvision torchaudio -c pytorch
-conda install ipykernel
-conda install conda-forge::librosa
-conda install -c conda-forge ipywidgets
-conda install -c huggingface transformers
-conda install -c huggingface -c conda-forge datasets

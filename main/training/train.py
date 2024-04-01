@@ -53,7 +53,7 @@ training_args = TrainingArguments(
     logging_steps=5,
     load_best_model_at_end=True,
     metric_for_best_model="accuracy",
-    fp16=False,
+    fp16=True,
     push_to_hub=True,
 )
 
