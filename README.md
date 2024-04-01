@@ -7,9 +7,27 @@
 ## Current results
 ### Accuracy
 ```
-Correct guesses: 72 out of 95
-Accuracy: 75.78947368421053%
+Correct guesses: 86 out of 111
+Accuracy: 77.47747747747748%
+
+slap - 15/21. 
+slap accuracy: 71.42857142857143%
+jump_up - 4/9. 
+jump_up accuracy: 44.44444444444444%
+acid - 8/11. 
+acid accuracy: 72.72727272727273%
+brass - 16/17. 
+brass accuracy: 94.11764705882352%
+sub - 7/7. 
+sub accuracy: 100.0%
+reese - 0/1. 
+reese accuracy: 0.0%
+growl - 16/18. 
+growl accuracy: 88.88888888888889%
+808 - 20/27. 
+808 accuracy: 74.07407407407408%
 ```
+
 
 ### slap
 - ✅: slap / slap - AU_ESH2_bass_synth_one_shot_bristly_G#.wav
@@ -53,12 +71,28 @@ Accuracy: 75.78947368421053%
 - ✅: acid / acid - PLX_ACT_synth_crisp_F.wav
 - ❌: acid / growl - PLX_ACT_synth_ear_F.wav
 - ✅: acid / acid - RU_IA_squelch_bass_C.wav
+- ❌: acid / jump_up - STCR2_MTA_Synth_Lead_One_Shot_Acid_A.wav
 - ✅: acid / acid - TL_Bass_07.wav
 - ✅: acid / acid - plx_itt_synth_acid_growl_#D.wav
 - ✅: acid / acid - shs_rs_acid_shot_4_B.wav
 
 ### brass
+- ✅: brass / brass - ABJP_Brass_19_Stab_A#__Low_.wav
+- ✅: brass / brass - ABJP_Brass_20_Stab_D#m__Low_.wav
 - ✅: brass / brass - BOS_ADJ_Bass_Synth_One_Shot_Mellow_F.wav
+- ✅: brass / brass - D#_BrassStab_TL.wav
+- ✅: brass / brass - DMVU_BRASS_STACC_D#.wav
+- ✅: brass / brass - EHT_one_shot_melodic_brass_1_C.wav
+- ✅: brass / brass - JPGC_one_shot_mr_brass_Dmaj.wav
+- ✅: brass / brass - JUST_hit_brass_2.wav
+- ✅: brass / brass - KSHMR_Brass_Stab_03_-__F_.wav
+- ✅: brass / brass - OSKAR_FLOOD_hit_horn_blast_C.wav
+- ✅: brass / brass - PMTQ_Brass_A#_Horn.wav
+- ✅: brass / brass - PMTQ_Brass_F_Huge.wav
+- ❌: brass / jump_up - RKU_NG_Bass_Synth_One_Shot_Grime_Brass_Stab_E.wav
+- ✅: brass / brass - SO_BA_brass_themachine_triumphs_big_band_G.wav
+- ✅: brass / brass - TDS_brass_stab_death_D.wav
+- ✅: brass / brass - rss_brass_stab_D#maj.wav
 - ✅: brass / brass - tp_macky_gee_bass_one_shot_car_horn_F.wav
 
 ### sub
