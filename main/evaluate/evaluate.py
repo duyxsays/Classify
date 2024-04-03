@@ -64,4 +64,5 @@ print(f"Accuracy: {round(correct_guesses / amount * 100, 2)}%\n")
 for i in result_list:
     print(i)
 
+
 # %%

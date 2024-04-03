@@ -31,7 +31,7 @@ for category in categories:
     am.polarity_invert_samples(category_dir, inverted, category, str(category_count), str(total_categories))    # 1. Invert the samples
     am.pitch_shift_samples(inverted, shifted,  category, str(category_count), str(total_categories))            # 2. Pitch shift the samples
     am.time_stretch_samples(shifted, stretched, category, str(category_count), str(total_categories))           # 3. Time stretch the samples
-    am.move_data(augmented_dir, destination, stretched, category, str(category_count), str(total_categories))  # 4. Move the augmented samples to the destination folder
+    am.move_data(augmented_dir, destination, stretched, category, str(category_count), str(total_categories))   # 4. Move the augmented samples to the destination folder
     
 am.reduce_samples(augmented_dir)
 # %%

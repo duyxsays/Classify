@@ -7,19 +7,18 @@
 ## Current results
 ### Accuracy
 ```
-Correct guesses: 86 out of 111
-Accuracy: 77.48%
+Correct guesses: 93 out of 118
+Accuracy: 78.81%
 
 slap - 15/21 ~ 71.43%
 jump_up - 4/9 ~ 44.44%
 acid - 8/11 ~ 72.73%
 brass - 16/17 ~ 94.12%
 sub - 7/7 ~ 100.0%
-reese - 0/1 ~ 0.0%
+reese - 7/8 ~ 87.5%
 growl - 16/18 ~ 88.89%
 808 - 20/27 ~ 74.07%
 ```
-
 
 ### slap
 - ✅: slap / slap - AU_ESH2_bass_synth_one_shot_bristly_G#.wav
@@ -98,6 +97,13 @@ growl - 16/18 ~ 88.89%
 
 ### reese
 - ❌: reese / 808 - AU_PM_bass_synth_one_shot_dream_myth_A.wav
+- ✅: reese / reese - DS_PDH_122_bass_synth_loop_wish_reese_agressive_Gmin.wav
+- ✅: reese / reese - DS_VLUARR_128_bass_reese_loop_jungle_Amin.wav
+- ✅: reese / reese - MTW_loop_reese_bass_3_140_Amin.wav
+- ✅: reese / reese - OS_MRS_140_synth_reese_bass_icebox_Dm.wav
+- ✅: reese / reese - RKU_SRT_90_bass_reese_loop_sad_girl_first_Amin.wav
+- ✅: reese / reese - RKU_SRT_90_bass_reese_loop_sad_girl_second_Amin.wav
+- ✅: reese / reese - RST_Loop_Bass_Reese_Conor_120_G_Minor.wav
 
 ### growl
 - ✅: growl / growl - Au5_bass_wet_growl_02_F.wav
