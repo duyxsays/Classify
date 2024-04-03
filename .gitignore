@@ -162,5 +162,4 @@ cython_debug/
 # Custom folders
 data/
 main/augmentation/output
-main/training/distilhubert-bass-classifier2
 Audio-Classification/

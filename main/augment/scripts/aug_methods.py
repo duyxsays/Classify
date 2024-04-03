@@ -184,6 +184,18 @@ def delete_ds_store(directory):
                 os.remove(file_path)
                 print(f"Deleted: {file_path}")
 
+def list_data_folders(data_dir):
+    delete_ds_store(data_dir)
+    categories = os.listdir(data_dir)
+    categories.sort()
+
+    print('Available categories: \n')
+    for category in categories:
+        index = categories.index(category)
+        print(str(index) + ': ' + category)
+
+    return categories
+
 
 # MARK: Anaysis ---------------------------------------------------------------
 def analyse_duration(augmented_root):

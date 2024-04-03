@@ -27,10 +27,12 @@ print('\nChosen category: ' + selected_category)
 category_dir = os.path.join(root, selected_category)
 
 # %%
+
 # read sample directories
-inverted = '/Users/duyx/Code/Classify/main/augmentation/output/inverted'
-shifted = '/Users/duyx/Code/Classify/main/augmentation/output/pitch_shifted'
-stretched = '/Users/duyx/Code/Classify/main/augmentation/output/time_stretched/'
+output_dir = '/Users/duyx/Code/Classify/main/augment/output/'
+inverted = os.path.join(output_dir, 'inverted')
+shifted = os.path.join(output_dir, 'pitch_shifted')
+stretched = os.path.join(output_dir, 'time_stretched')
 
 # reference to the destination folder
 augmented_root = '/Users/duyx/Code/Classify/data/augment/augmented_bass_data_test'
