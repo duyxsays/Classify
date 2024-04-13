@@ -1,9 +1,7 @@
 import numpy as np
 import gradio as gr
 from transformers import pipeline
-# gradio - env
 
-# pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-bass-test")
 pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-bass-classifier")
 
 def classify_audio(audio):
@@ -49,6 +47,7 @@ demo = gr.Interface(
     fn=classify_audio,
     inputs=input_audio,
     outputs="textbox",
+    examples=[["brass.wav"], ["growl.wav"]],
     cache_examples=True,
 )
 

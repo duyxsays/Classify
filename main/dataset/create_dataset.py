@@ -6,19 +6,22 @@ from datasets import load_dataset
 
 # %%
 # create my dataset using the audiofolder builder from datasets library
-dataset = load_dataset("audiofolder", data_dir="/Users/duyx/Code/Classify/augmentation/data/augmented_bass_data")
+dataset = load_dataset("audiofolder", data_dir="/Users/duyx/Code/Classify/data/augment/augmented_bass_sounds")
 # %%
 # print the dictionary
 dataset
 # %%
 # print the last element of the dictionary
 dataset["train"][-1]
-# %%
+ # %%
 # make a train-test split of the dataset
 dataset = dataset["train"].train_test_split(seed=42, shuffle=True, test_size=0.1)
 # %%
 # print the train dataset
 dataset["train"][0]
+
+# %% 
+dataset
 # %%
 # extract features from the pretrained model
 model_id = "ntu-spml/distilhubert"
@@ -54,7 +57,7 @@ def preprocess_function(examples):
 
 
 # %%
-
+# mapping 
 dataset_encoded = dataset.map(
     preprocess_function,
     remove_columns=["audio"],
@@ -78,7 +81,7 @@ id2label["0"]
 
 
 # %%
-dataset_encoded.push_to_hub("TheDuyx/augmented_bass_data")
+dataset_encoded.push_to_hub("TheDuyx/augmented_bass_sounds")
 
 
 # %%

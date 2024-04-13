@@ -5,7 +5,7 @@ import os
 
 # %% 
 # list folder structure
-data_dir = '/Users/duyx/Code/Classify/data/train/version1.0'
+data_dir = '/Users/duyx/Code/Classify/data/train/version2.0'
 
 categories = am.list_data_folders(data_dir=data_dir)
 # %%
@@ -16,7 +16,7 @@ shifted = os.path.join(output_dir, 'pitch_shifted')
 stretched = os.path.join(output_dir, 'time_stretched')
 
 # reference to the destination folder
-augmented_dir = '/Users/duyx/Code/Classify/main/augment/data/augmented_bass_data'
+augmented_dir = '/Users/duyx/Code/Classify/data/augment/augmented_bass_sounds'
 
 # %%
 # run the entire augmentation process

@@ -11,11 +11,11 @@ import os
 # model = AutoModelForAudioClassification.from_pretrained("TheDuyx/distilhubert-finetuned-gtzan")
 # pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-gtzan")
 # pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-bass-audio")
-pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-bass-classifier")
+pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-bass-classifier5")
 
 # %%                
 correct_guesses = 0
-eval_dir = "/Users/duyx/Code/Classify/data/evaluate/"
+eval_dir = "/Users/duyx/Code/Classify/data/evaluate/version2.0/"
 
 service.delete_ds_store(eval_dir)
 
@@ -25,9 +25,9 @@ file = open(file_path, "w")
 result_list = []
 
 for dir in os.listdir(eval_dir):
-
+    
     samples = os.listdir(f"{eval_dir}{dir}")
-    samples.sort();
+    samples.sort()
     sub_amount = len(samples)
     sub_guesses = 0
     
