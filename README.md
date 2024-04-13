@@ -7,27 +7,27 @@
 ## Current results
 ### Accuracy
 ```
-Correct guesses: 93 out of 118
-Accuracy: 78.81%
+Correct guesses: 121 out of 138
+Accuracy: 87.68%
 
-slap - 15/21 ~ 71.43%
-jump_up - 4/9 ~ 44.44%
-acid - 8/11 ~ 72.73%
-brass - 16/17 ~ 94.12%
-sub - 7/7 ~ 100.0%
-reese - 7/8 ~ 87.5%
+slap - 21/21 ~ 100.0%
+acid - 12/18 ~ 66.67%
+brass - 17/17 ~ 100.0%
+sub - 12/15 ~ 80.0%
+reese - 16/17 ~ 94.12%
 growl - 16/18 ~ 88.89%
-808 - 20/27 ~ 74.07%
+808 - 27/32 ~ 84.38%
 ```
+
 
 ### slap
 - ✅: slap / slap - AU_ESH2_bass_synth_one_shot_bristly_G#.wav
-- ❌: slap / jump_up - AU_ESH2_bass_synth_one_shot_sharp_F.wav
+- ✅: slap / slap - AU_ESH2_bass_synth_one_shot_sharp_F.wav
 - ✅: slap / slap - BOS_ADJ_Bass_Synth_One_Shot_Stepper_E.wav
 - ✅: slap / slap - DS_DSH_bass_synth_one_shot_bad_blood_high_C.wav
 - ✅: slap / slap - DS_DSH_bass_synth_one_shot_control_low_C.wav
-- ❌: slap / jump_up - DS_DSH_bass_synth_one_shot_light_high_C.wav
-- ❌: slap / jump_up - DS_DSH_bass_synth_one_shot_nothing_to_lose_high_C.wav
+- ✅: slap / slap - DS_DSH_bass_synth_one_shot_light_high_C.wav
+- ✅: slap / slap - DS_DSH_bass_synth_one_shot_nothing_to_lose_high_C.wav
 - ✅: slap / slap - DS_SSH_bass_synth_one_shot_boss_slap_C.wav
 - ✅: slap / slap - DS_VEDMH_bass_slap_one_shot_way_C.wav
 - ✅: slap / slap - FL_SH_Kit01_Bass_One_Shot_Synth.wav
@@ -36,35 +36,31 @@ growl - 16/18 ~ 88.89%
 - ✅: slap / slap - FL_VSH_Better_Bass_One_Shot_Deep_C.wav
 - ✅: slap / slap - PM_GB_Bass_One_Shot_Click_F#.wav
 - ✅: slap / slap - PM_GB_Bass_One_Shot_Short_G.wav
-- ❌: slap / jump_up - STCR2_VPSH_Bass_One_Shot_Anthem_F.wav
-- ❌: slap / jump_up - STCR2_VPSH_Bass_One_Shot_Gravity_A.wav
+- ✅: slap / slap - STCR2_VPSH_Bass_One_Shot_Anthem_F.wav
+- ✅: slap / slap - STCR2_VPSH_Bass_One_Shot_Gravity_A.wav
 - ✅: slap / slap - TRKTRN_CSH_Bass_One_Shot_Anomaly_D#.wav
 - ✅: slap / slap - TRKTRN_CSH_Bass_One_Shot_Kola_G.wav
 - ✅: slap / slap - TRKTRN_CSH_Bass_One_Shot_Orchid_D#.wav
-- ❌: slap / jump_up - TRKTRN_FISH_Bass_One_Shot_Legend_F#.wav
-
-### jump_up
-- ✅: jump_up / jump_up - BOS_ADJ_Bass_Synth_One_Shot_Dino_E.wav
-- ❌: jump_up / acid - BOS_ADJ_Bass_Synth_One_Shot_Metallic_E.wav
-- ✅: jump_up / jump_up - DS_SSH_bass_synth_one_shot_mulner_C.wav
-- ✅: jump_up / jump_up - TRKTRN_CSH_Bass_One_Shot_Headshot_G.wav
-- ❌: jump_up / growl - tp_macky_gee_bass_one_shot_mg_face_mask_F.wav
-- ✅: jump_up / jump_up - tp_macky_gee_bass_one_shot_mg_i_know_u_F.wav
-- ❌: jump_up / brass - tp_macky_gee_bass_one_shot_mg_vomit_F.wav
-- ❌: jump_up / brass - tp_macky_gee_bass_one_shot_mg_who_knows_this_F.wav
-- ❌: jump_up / growl - tp_macky_gee_bass_one_shot_poke_F.wav
+- ✅: slap / slap - TRKTRN_FISH_Bass_One_Shot_Legend_F#.wav
 
 ### acid
 - ✅: acid / acid - Acid_1.wav
-- ❌: acid / slap - GHD_Kit2_acid_shot_126_G#_minor.wav
+- ✅: acid / acid - Bpm138_C_Vindicator_Bass01.wav
+- ✅: acid / acid - DASHA_RUSH_130_acid_loop_02_01.wav
+- ✅: acid / acid - DASHA_RUSH_130_acid_loop_02_05.wav
+- ❌: acid / brass - DS_T_136_bass_synth_loop_area_acid_F#min.wav
+- ❌: acid / brass - DS_T_138_bass_synth_loop_universe_acid_F#min.wav
+- ✅: acid / acid - FF_ATS_142_kit_quantum_bass_Dmin.wav
+- ❌: acid / reese - GHD_Kit2_acid_shot_126_G#_minor.wav
 - ✅: acid / acid - OS_SLT_C_Acid_Hit__Low_.wav
 - ✅: acid / acid - PLX_ACT_synth_blade_Eb.wav
 - ✅: acid / acid - PLX_ACT_synth_crisp_F.wav
 - ❌: acid / growl - PLX_ACT_synth_ear_F.wav
-- ✅: acid / acid - RU_IA_squelch_bass_C.wav
-- ❌: acid / jump_up - STCR2_MTA_Synth_Lead_One_Shot_Acid_A.wav
+- ❌: acid / reese - RU_IA_squelch_bass_C.wav
+- ❌: acid / brass - STCR2_MTA_Synth_Lead_One_Shot_Acid_A.wav
 - ✅: acid / acid - TL_Bass_07.wav
 - ✅: acid / acid - plx_itt_synth_acid_growl_#D.wav
+- ✅: acid / acid - pt_acid_128_burr_F.wav
 - ✅: acid / acid - shs_rs_acid_shot_4_B.wav
 
 ### brass
@@ -80,7 +76,7 @@ growl - 16/18 ~ 88.89%
 - ✅: brass / brass - OSKAR_FLOOD_hit_horn_blast_C.wav
 - ✅: brass / brass - PMTQ_Brass_A#_Horn.wav
 - ✅: brass / brass - PMTQ_Brass_F_Huge.wav
-- ❌: brass / jump_up - RKU_NG_Bass_Synth_One_Shot_Grime_Brass_Stab_E.wav
+- ✅: brass / brass - RKU_NG_Bass_Synth_One_Shot_Grime_Brass_Stab_E.wav
 - ✅: brass / brass - SO_BA_brass_themachine_triumphs_big_band_G.wav
 - ✅: brass / brass - TDS_brass_stab_death_D.wav
 - ✅: brass / brass - rss_brass_stab_D#maj.wav
@@ -90,20 +86,37 @@ growl - 16/18 ~ 88.89%
 - ✅: sub / sub - 808_VIRGOAPTO.wav
 - ✅: sub / sub - 808_VIRGOCHESNUT.wav
 - ✅: sub / sub - 808_VIRGOCHIKO.wav
-- ✅: sub / sub - 808_VIRGOKRIST.wav
-- ✅: sub / sub - 808_VIRGOPERFECT.wav
-- ✅: sub / sub - OS_GIRL_808_B_Cruz.wav
+- ❌: sub / reese - 808_VIRGOKRIST.wav
+- ❌: sub / reese - 808_VIRGOPERFECT.wav
+- ✅: sub / sub - Bass_Loops_Lo-Fi_Bass_06_85_G.wav
+- ✅: sub / sub - DS_VTH_fx_one_shot_back_bass_sub_drop.wav
+- ✅: sub / sub - H808_Bass_One_shot_Deep.wav
+- ✅: sub / sub - KLAX_808_Hit_03_F.wav
+- ❌: sub / reese - OS_GIRL_808_B_Cruz.wav
 - ✅: sub / sub - OS_GIRL_808_G_Spy.wav
+- ✅: sub / sub - PB_SUB.WAV
+- ✅: sub / sub - RKU_NG_Bass_Synth_One_Shot_Fat_Sub_Stab_Clean_F#.wav
+- ✅: sub / sub - SO_PTW_Jupiter_sub_note_Bb.wav
+- ✅: sub / sub - STC2_VPSH_122_Kit_Loop_Asleep_Sub_Drop_G.wav
 
 ### reese
 - ❌: reese / 808 - AU_PM_bass_synth_one_shot_dream_myth_A.wav
+- ✅: reese / reese - BOS_DBK_174_Bass_Reese_Loop_Deep_F.wav
+- ✅: reese / reese - DS_MDH_120_bass_synth_loop_toxic_sub_Gmin.wav
+- ✅: reese / reese - DS_PDH_120_bass_synth_loop_witness_reese_wide_D#min.wav
 - ✅: reese / reese - DS_PDH_122_bass_synth_loop_wish_reese_agressive_Gmin.wav
 - ✅: reese / reese - DS_VLUARR_128_bass_reese_loop_jungle_Amin.wav
+- ✅: reese / reese - FL_ED_Kit01_808_One_Shot_F#.wav
+- ✅: reese / reese - FL_ED_Kit02_808_One_Shot_G.wav
+- ✅: reese / reese - FL_ED_Kit03_808_One_Shot_E.wav
+- ✅: reese / reese - FMP_Kit1_115_Drone_Bass_Progression_1_C#_Major.wav
 - ✅: reese / reese - MTW_loop_reese_bass_3_140_Amin.wav
 - ✅: reese / reese - OS_MRS_140_synth_reese_bass_icebox_Dm.wav
+- ✅: reese / reese - OS_SHD_135_Dm_Serial_Crunch_Bass_2.wav
 - ✅: reese / reese - RKU_SRT_90_bass_reese_loop_sad_girl_first_Amin.wav
 - ✅: reese / reese - RKU_SRT_90_bass_reese_loop_sad_girl_second_Amin.wav
 - ✅: reese / reese - RST_Loop_Bass_Reese_Conor_120_G_Minor.wav
+- ✅: reese / reese - ZEN_BPH_bass_one_shot_burgundy_F.wav
 
 ### growl
 - ✅: growl / growl - Au5_bass_wet_growl_02_F.wav
@@ -127,29 +140,34 @@ growl - 16/18 ~ 88.89%
 
 ### 808
 - ✅: 808 / 808 - 808_VIRGLONG.wav
-- ❌: 808 / sub - 808_VIRGOANTICHRIS.wav
+- ✅: 808 / 808 - 808_VIRGOANTICHRIS.wav
 - ❌: 808 / reese - 808_VIRGOCROSSS.wav
 - ✅: 808 / 808 - 808_VIRGOINDIGO.wav
 - ❌: 808 / sub - 808_VIRGOLAGO.wav
-- ✅: 808 / 808 - 808_VIRGOLESTAF.wav
+- ❌: 808 / reese - 808_VIRGOLESTAF.wav
 - ✅: 808 / 808 - 808_VIRGOSHORDIE.wav
 - ✅: 808 / 808 - 808_VIRGOSYNDICATE.wav
 - ✅: 808 / 808 - 808_VIRGSHORT.wav
+- ✅: 808 / 808 - JETSONMADE_808_alien_C.wav
+- ✅: 808 / 808 - JETSONMADE_808_class2_C.wav
+- ✅: 808 / 808 - JETSONMADE_808_lil83_C.wav
+- ✅: 808 / 808 - JETSONMADE_808_rocket2_C.wav
+- ✅: 808 / 808 - JETSONMADE_808_space2_C.wav
 - ✅: 808 / 808 - OS_GIRL_808_A#_Block.wav
 - ✅: 808 / 808 - OS_GIRL_808_A_Lowrider.wav
 - ✅: 808 / 808 - OS_GIRL_808_A_Sunwave.wav
-- ❌: 808 / brass - OS_GIRL_808_B_Viking.wav
+- ✅: 808 / 808 - OS_GIRL_808_B_Viking.wav
 - ✅: 808 / 808 - OS_GIRL_808_C#_Heavy.wav
 - ✅: 808 / 808 - OS_GIRL_808_C_Bubbly.wav
 - ✅: 808 / 808 - OS_GIRL_808_D#_Crumz.wav
 - ✅: 808 / 808 - OS_GIRL_808_D_Sargent.wav
-- ❌: 808 / sub - OS_GIRL_808_E_Resurrect.wav
+- ✅: 808 / 808 - OS_GIRL_808_E_Resurrect.wav
 - ✅: 808 / 808 - OS_GIRL_808_E_Stank.wav
 - ✅: 808 / 808 - OS_GIRL_808_E_Thud.wav
 - ✅: 808 / 808 - OS_GIRL_808_F_Dash.wav
 - ❌: 808 / reese - OS_GIRL_808_F_Growl.wav
-- ✅: 808 / 808 - OS_GIRL_808_F_Slapper.wav
-- ❌: 808 / reese - OS_GIRL_808_G#_Steady.wav
+- ❌: 808 / reese - OS_GIRL_808_F_Slapper.wav
+- ✅: 808 / 808 - OS_GIRL_808_G#_Steady.wav
 - ✅: 808 / 808 - OS_GIRL_808_G_Cash.wav
 - ✅: 808 / 808 - OS_GIRL_808_G_March.wav
 - ✅: 808 / 808 - OS_GIRL_808_G_Thump.wav
