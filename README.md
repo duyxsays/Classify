@@ -20,6 +20,7 @@ growl - 16/18 ~ 88.89%
 808 - 27/32 ~ 84.38%
 ```
 ### Confusion Matrix
+![alt text](https://github.com/ThaDuyx/Classify/blob/dev/main/evaluate/confusion_matrix.png?raw=true)
 
 ### slap
 - ✅: slap / slap - AU_ESH2_bass_synth_one_shot_bristly_G#.wav
