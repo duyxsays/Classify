@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 import os
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # function to find the closest item to 1
 def closest_to_one(data_list):
@@ -40,7 +43,21 @@ def envelope(y, rate, threshold):
             mask.append(False)
     return mask, y_mean
 
-# Other models or pipelines
-# model = AutoModelForAudioClassification.from_pretrained("TheDuyx/distilhubert-finetuned-gtzan")
-# pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-gtzan")
-# pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-bass-audio")
+
+def create_confusion_matrix(true_labels, predicted_labels):
+    
+    labels = ["slap", "acid", "brass", "sub", "reese", "growl", "808"]
+    
+    cm = confusion_matrix(true_labels, predicted_labels)
+    
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, cmap='Blues', cbar=False, annot=True, fmt='d', xticklabels=labels, yticklabels=labels)
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.title('Confusion Matrix')
+    plt.savefig('./confusion_matrix.png')
+    plt.show()
+    
+
+    #sns.heatmap(cm, annot=True, cmap='Blues', fmt='d', xticklabels=np.unique(true_labels), yticklabels=np.unique(true_labels))    
+    

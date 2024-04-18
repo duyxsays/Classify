@@ -8,9 +8,6 @@ import os
 
 # %%
 # load pipeline
-# model = AutoModelForAudioClassification.from_pretrained("TheDuyx/distilhubert-finetuned-gtzan")
-# pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-gtzan")
-# pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-finetuned-bass-audio")
 pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-bass-classifier5")
 
 # %%                
@@ -23,6 +20,8 @@ file_path = "/Users/duyx/Code/Classify/main/evaluate/log/results.txt"
 amount = service.total_samples(eval_dir)
 file = open(file_path, "w")
 result_list = []
+true_labels = []
+predicted_labels = []
 
 for dir in os.listdir(eval_dir):
     
@@ -54,6 +53,8 @@ for dir in os.listdir(eval_dir):
             correct_guesses += 1 # count amount of correct guesses
             sub_guesses += 1
 
+        true_labels.append(dir)
+        predicted_labels.append(result['label'])
         file.write(f"- {eval}: {dir} / {result['label']} - {sample}\n")
 
     result_list.append(f"{dir} - {sub_guesses}/{sub_amount} ~ {round(sub_guesses / sub_amount * 100, 2)}%")
@@ -65,4 +66,5 @@ for i in result_list:
     print(i)
 
 
-# %%
+service.create_confusion_matrix(true_labels, predicted_labels)
+ # %%
