@@ -51,9 +51,16 @@ def create_confusion_matrix(true_labels, predicted_labels):
     cm = confusion_matrix(true_labels, predicted_labels)
     
     plt.figure(figsize=(8, 6))
-    sns.heatmap(cm, cmap='Blues', cbar=False, annot=True, fmt='d', xticklabels=labels, yticklabels=labels)
-    plt.xlabel('Predicted')
-    plt.ylabel('True')
+    sns.heatmap(cm, 
+                cmap='Blues', 
+                cbar=False, 
+                annot=True, fmt='d', 
+                xticklabels=np.unique(true_labels), 
+                yticklabels=np.unique(true_labels)
+                )
+    
+    plt.xlabel('Predicted Labels')
+    plt.ylabel('True Labels')
     plt.title('Confusion Matrix')
     plt.savefig('./confusion_matrix.png')
     plt.show()
