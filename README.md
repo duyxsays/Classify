@@ -22,6 +22,20 @@ growl - 16/18 ~ 88.89%
 ### Confusion Matrix
 ![alt text](https://github.com/ThaDuyx/Classify/blob/dev/main/evaluate/confusion_matrix.png?raw=true)
 
+### Performance Metrics
+```
+              precision    recall  f1-score     support
+808            0.96         0.84    0.90        32
+acid           1.00         0.67    0.80        18
+brass          0.77         1.00    0.87        17
+growl          0.94         0.89    0.91        18
+reese          0.64         0.94    0.76        17
+slap           1.00         1.00    1.00        21
+sub            0.92         0.80    0.86        15
+accuracy       0.88         0.88    0.88        0.87
+macro avg      0.89         0.88    0.87        138
+weighted avg   0.90         0.88    0.88        138
+```
 ### slap
 - ✅: slap / slap - AU_ESH2_bass_synth_one_shot_bristly_G#.wav
 - ✅: slap / slap - AU_ESH2_bass_synth_one_shot_sharp_F.wav

@@ -67,4 +67,5 @@ for i in result_list:
 
 
 service.create_confusion_matrix(true_labels, predicted_labels)
+service.create_report(true_labels, predicted_labels)
  # %%

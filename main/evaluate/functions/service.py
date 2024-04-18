@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import os
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, classification_report
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -64,7 +64,9 @@ def create_confusion_matrix(true_labels, predicted_labels):
     plt.title('Confusion Matrix')
     plt.savefig('./confusion_matrix.png')
     plt.show()
-    
 
-    #sns.heatmap(cm, annot=True, cmap='Blues', fmt='d', xticklabels=np.unique(true_labels), yticklabels=np.unique(true_labels))    
+def create_report(true_labels, predicted_labels):
+    report = classification_report(true_labels, predicted_labels, output_dict=True)
+    final_report = pd.DataFrame(report).transpose()
+    print(final_report)
     
