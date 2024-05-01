@@ -6,11 +6,11 @@
             "version": "1.87.2"
         },
         "product": {
-            "id": "u1-standard-32",
+            "id": "u1-standard-1",
             "category": "u1-standard",
             "provider": "ucloud"
         },
-        "name": "dev",
+        "name": null,
         "replicas": 1,
         "parameters": {
             "initialization": {
@@ -22,7 +22,7 @@
         "resources": [
             {
                 "type": "file",
-                "path": "/900249/Jobs/Coder CUDA/miniconda/miniconda3",
+                "path": "/900249/miniconda3",
                 "readOnly": false
             },
             {
@@ -47,7 +47,7 @@
         }
     },
     "machineType": {
-        "cpu": 32,
-        "memoryInGigs": 192
+        "cpu": 1,
+        "memoryInGigs": 6
     }
 }

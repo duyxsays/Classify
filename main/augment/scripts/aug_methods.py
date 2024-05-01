@@ -18,8 +18,8 @@ def polarity_invert_samples(input, output, category, progress, total):
     for sample in os.listdir(input):
         signal, sr = lr.load(os.path.join(input, sample), sr=16000, mono=True)
         
-        
         inverted_audio = signal * -1
+
         output_path = os.path.join(output, 'inverted_' + sample)
         copy_path = os.path.join(output, sample)
         

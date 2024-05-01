@@ -9,11 +9,13 @@ import os
 # %% 
 # define the pipelines
 pipelines = [
-    "TheDuyx/distilhubert-bass-classifier", 
-    "TheDuyx/distilhubert-bass-classifier2", 
+    "TheDuyx/distilhubert-bass-classifier",
     "TheDuyx/distilhubert-bass-classifier3",
     "TheDuyx/distilhubert-bass-classifier4",
-    "TheDuyx/distilhubert-bass-classifier5"
+    "TheDuyx/distilhubert-bass-classifier5",
+    "TheDuyx/distilhubert-bass-classifier6",
+    "TheDuyx/distilhubert-bass-classifier7",
+    "TheDuyx/distilhubert-bass-classifier8"
     ]
 
 # %%
