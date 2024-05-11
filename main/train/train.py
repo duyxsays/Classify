@@ -1,13 +1,17 @@
+# %%
 import numpy as np
 import evaluate
 from datasets import load_dataset
 from huggingface_hub import notebook_login
 from transformers import Trainer, TrainingArguments, AutoModelForAudioClassification, AutoFeatureExtractor
 
-notebook_login()
+# %%
+dataset = load_dataset("TheDuyx/augmented_bass_sounds")
 
-dataset = load_dataset("TheDuyx/augmented_bass_data")
+# %%
+dataset["train"]['label']
 
+# %%
 model_id = "ntu-spml/distilhubert"
 feature_extractor = AutoFeatureExtractor.from_pretrained(
     model_id, do_normalize=True, return_attention_mask=True

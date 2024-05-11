@@ -8,20 +8,26 @@ import os
 
 # %% 
 # define the pipelines
+# "TheDuyx/distilhubert-bass-classifier5"       87.68%
+# "TheDuyx/distilhubert-bass-classifier7"       86.23%
+# "TheDuyx/distilhubert-bass-classifier8"       86.96%
+# "TheDuyx/distilhubert-bass"                   86.68%
+# "TheDuyx/distilhubert-bass-classifier9",    # 89.13%
+# "TheDuyx/distilhubert-bass3",               # 89.13%
+# "TheDuyx/distilhubert-bass4",               # 89.13%
+# "TheDuyx/distilhubert-bass6"                # 86.96%
+# "TheDuyx/distilhubert-bass7"                # 87.68%
+
 pipelines = [
-    "TheDuyx/distilhubert-bass-classifier",
-    "TheDuyx/distilhubert-bass-classifier3",
-    "TheDuyx/distilhubert-bass-classifier4",
-    "TheDuyx/distilhubert-bass-classifier5",
-    "TheDuyx/distilhubert-bass-classifier6",
-    "TheDuyx/distilhubert-bass-classifier7",
-    "TheDuyx/distilhubert-bass-classifier8"
+    "TheDuyx/distilhubert-bass5",               # 89.86%
+    "TheDuyx/distilhubert-bass9"                # 90.58%
     ]
 
 # %%
+# evaluate the pipelines
 log_path = "/Users/duyx/Code/classify/main/evaluate/log/all_results.txt"
 log = open(log_path, "w")
-eval_dir = "/Users/duyx/Code/classify/data/evaluate/version2.0/"
+eval_dir = "/Users/duyx/Code/classify/data/evaluate/version3.0/"
 service.delete_ds_store(eval_dir)
 
 

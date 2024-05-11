@@ -8,11 +8,12 @@ import os
 
 # %%
 # load pipeline
-pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-bass-classifier5")
+pipe = pipeline("audio-classification", model="TheDuyx/distilhubert-bass9")
 
-# %%                
+# %%   
+# evaluate the pipeline             
 correct_guesses = 0
-eval_dir = "/Users/duyx/Code/Classify/data/evaluate/version2.0/"
+eval_dir = "/Users/duyx/Code/Classify/data/evaluate/version3.0/"
 
 service.delete_ds_store(eval_dir)
 

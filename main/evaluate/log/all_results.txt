@@ -1,28 +1,12 @@
-### TheDuyx/distilhubert-bass-classifier
-Correct guesses: 116 out of 138
-Accuracy: 84.06%
+### TheDuyx/distilhubert-bass5
+Correct guesses: 124 out of 138
+Accuracy: 89.86%
 
-### TheDuyx/distilhubert-bass-classifier3
-Correct guesses: 113 out of 138
-Accuracy: 81.88%
+### TheDuyx/distilhubert-bass8
+Correct guesses: 122 out of 138
+Accuracy: 88.41%
 
-### TheDuyx/distilhubert-bass-classifier4
-Correct guesses: 109 out of 138
-Accuracy: 78.99%
-
-### TheDuyx/distilhubert-bass-classifier5
-Correct guesses: 121 out of 138
-Accuracy: 87.68%
-
-### TheDuyx/distilhubert-bass-classifier6
-Correct guesses: 118 out of 138
-Accuracy: 85.51%
-
-### TheDuyx/distilhubert-bass-classifier7
-Correct guesses: 119 out of 138
-Accuracy: 86.23%
-
-### TheDuyx/distilhubert-bass-classifier8
-Correct guesses: 120 out of 138
-Accuracy: 86.96%
+### TheDuyx/distilhubert-bass9
+Correct guesses: 125 out of 138
+Accuracy: 90.58%
 

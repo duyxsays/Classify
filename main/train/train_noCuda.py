@@ -10,17 +10,13 @@ feature_extractor = AutoFeatureExtractor.from_pretrained(
     model_id, do_normalize=True, return_attention_mask=True
 )
 
+# Labels
 id2label_fn = dataset["train"].features["label"].int2str
-
 id2label = {
     str(i): id2label_fn(i)
     for i in range(len(dataset["train"].features["label"].names))
 }
-
 label2id = {v: k for k, v in id2label.items()}
-
-id2label["0"]
-
 num_labels = len(id2label)
 
 model = AutoModelForAudioClassification.from_pretrained(

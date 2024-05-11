@@ -5,26 +5,21 @@ from transformers import Trainer, TrainingArguments, AutoModelForAudioClassifica
 
 datasetName = "TheDuyx/augmented_bass_sounds"
 dataTag = "augmented_bass_sounds"
-pre_name="bass-classifier6"
+pre_name = "bass9"
+model_id = "ntu-spml/distilhubert"
 
 dataset = load_dataset(datasetName)
 
-model_id = "ntu-spml/distilhubert"
 feature_extractor = AutoFeatureExtractor.from_pretrained(
     model_id, do_normalize=True, return_attention_mask=True
 )
 
 id2label_fn = dataset["train"].features["label"].int2str
-
 id2label = {
     str(i): id2label_fn(i)
     for i in range(len(dataset["train"].features["label"].names))
 }
-
 label2id = {v: k for k, v in id2label.items()}
-
-id2label["0"]
-
 num_labels = len(id2label)
 
 model = AutoModelForAudioClassification.from_pretrained(
@@ -34,16 +29,18 @@ model = AutoModelForAudioClassification.from_pretrained(
     id2label=id2label,
 )
 
+# Hyperparameters
 model_name = model_id.split("/")[-1]
-batch_size = 8
-gradient_accumulation_steps = 1
-num_train_epochs = 5 # usually sat to 10
+batch_size = 16
+gradient_accumulation_steps = 5
+num_train_epochs = 3 # usually sat to 10
 
+# Training arguments
 training_args = TrainingArguments(
     f"{model_name}-{pre_name}",
     evaluation_strategy="epoch",
     save_strategy="epoch",
-    learning_rate=5e-4,
+    learning_rate=5e-5,
     per_device_train_batch_size=batch_size,
     gradient_accumulation_steps=gradient_accumulation_steps,
     per_device_eval_batch_size=batch_size,
