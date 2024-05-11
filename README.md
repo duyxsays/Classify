@@ -8,16 +8,16 @@
 ## Current results
 ### Accuracy
 ```
-Correct guesses: 121 out of 138
-Accuracy: 87.68%
+Correct guesses: 126 out of 138
+Accuracy: 91.3%
 
-slap - 21/21 ~ 100.0%
-acid - 12/18 ~ 66.67%
-brass - 17/17 ~ 100.0%
-sub - 12/15 ~ 80.0%
-reese - 16/17 ~ 94.12%
-growl - 16/18 ~ 88.89%
-808 - 27/32 ~ 84.38%
+slap - 20/21 ~ 95.24%
+acid - 14/18 ~ 77.78%
+brass - 16/16 ~ 100.0%
+sub - 14/15 ~ 93.33%
+reese - 17/17 ~ 100.0%
+growl - 17/19 ~ 89.47%
+808 - 28/32 ~ 87.5%
 ```
 ### Confusion Matrix
 ![alt text](https://github.com/ThaDuyx/Classify/blob/dev/main/evaluate/confusion_matrix.png?raw=true)
@@ -25,16 +25,16 @@ growl - 16/18 ~ 88.89%
 ### Performance Metrics
 ```
               precision    recall  f1-score     support
-808            0.96         0.84    0.90        32
-acid           1.00         0.67    0.80        18
-brass          0.77         1.00    0.87        17
-growl          0.94         0.89    0.91        18
-reese          0.64         0.94    0.76        17
-slap           1.00         1.00    1.00        21
-sub            0.92         0.80    0.86        15
-accuracy       0.88         0.88    0.88        0.87
-macro avg      0.89         0.88    0.87        138
-weighted avg   0.90         0.88    0.88        138
+808            1.000000  0.875000  0.933333   32.000000
+acid           0.875000  0.777778  0.823529   18.000000
+brass          0.800000  1.000000  0.888889   16.000000
+growl          0.944444  0.894737  0.918919   19.000000
+reese          0.850000  1.000000  0.918919   17.000000
+slap           1.000000  0.952381  0.975610   21.000000
+sub            0.875000  0.933333  0.903226   15.000000
+accuracy       0.913043  0.913043  0.913043    0.913043
+macro avg      0.906349  0.919033  0.908918  138.000000
+weighted avg   0.920793  0.913043  0.913259  138.000000
 ```
 ### slap
 - ✅: slap / slap - AU_ESH2_bass_synth_one_shot_bristly_G#.wav
@@ -43,7 +43,7 @@ weighted avg   0.90         0.88    0.88        138
 - ✅: slap / slap - DS_DSH_bass_synth_one_shot_bad_blood_high_C.wav
 - ✅: slap / slap - DS_DSH_bass_synth_one_shot_control_low_C.wav
 - ✅: slap / slap - DS_DSH_bass_synth_one_shot_light_high_C.wav
-- ✅: slap / slap - DS_DSH_bass_synth_one_shot_nothing_to_lose_high_C.wav
+- ❌: slap / acid - DS_DSH_bass_synth_one_shot_nothing_to_lose_high_C.wav
 - ✅: slap / slap - DS_SSH_bass_synth_one_shot_boss_slap_C.wav
 - ✅: slap / slap - DS_VEDMH_bass_slap_one_shot_way_C.wav
 - ✅: slap / slap - FL_SH_Kit01_Bass_One_Shot_Synth.wav
@@ -67,12 +67,12 @@ weighted avg   0.90         0.88    0.88        138
 - ❌: acid / brass - DS_T_136_bass_synth_loop_area_acid_F#min.wav
 - ❌: acid / brass - DS_T_138_bass_synth_loop_universe_acid_F#min.wav
 - ✅: acid / acid - FF_ATS_142_kit_quantum_bass_Dmin.wav
-- ❌: acid / reese - GHD_Kit2_acid_shot_126_G#_minor.wav
+- ✅: acid / acid - GHD_Kit2_acid_shot_126_G#_minor.wav
 - ✅: acid / acid - OS_SLT_C_Acid_Hit__Low_.wav
 - ✅: acid / acid - PLX_ACT_synth_blade_Eb.wav
 - ✅: acid / acid - PLX_ACT_synth_crisp_F.wav
 - ❌: acid / growl - PLX_ACT_synth_ear_F.wav
-- ❌: acid / reese - RU_IA_squelch_bass_C.wav
+- ✅: acid / acid - RU_IA_squelch_bass_C.wav
 - ❌: acid / brass - STCR2_MTA_Synth_Lead_One_Shot_Acid_A.wav
 - ✅: acid / acid - TL_Bass_07.wav
 - ✅: acid / acid - plx_itt_synth_acid_growl_#D.wav
@@ -96,14 +96,13 @@ weighted avg   0.90         0.88    0.88        138
 - ✅: brass / brass - SO_BA_brass_themachine_triumphs_big_band_G.wav
 - ✅: brass / brass - TDS_brass_stab_death_D.wav
 - ✅: brass / brass - rss_brass_stab_D#maj.wav
-- ✅: brass / brass - tp_macky_gee_bass_one_shot_car_horn_F.wav
 
 ### sub
 - ✅: sub / sub - 808_VIRGOAPTO.wav
 - ✅: sub / sub - 808_VIRGOCHESNUT.wav
 - ✅: sub / sub - 808_VIRGOCHIKO.wav
-- ❌: sub / reese - 808_VIRGOKRIST.wav
-- ❌: sub / reese - 808_VIRGOPERFECT.wav
+- ✅: sub / sub - 808_VIRGOKRIST.wav
+- ✅: sub / sub - 808_VIRGOPERFECT.wav
 - ✅: sub / sub - Bass_Loops_Lo-Fi_Bass_06_85_G.wav
 - ✅: sub / sub - DS_VTH_fx_one_shot_back_bass_sub_drop.wav
 - ✅: sub / sub - H808_Bass_One_shot_Deep.wav
@@ -116,7 +115,7 @@ weighted avg   0.90         0.88    0.88        138
 - ✅: sub / sub - STC2_VPSH_122_Kit_Loop_Asleep_Sub_Drop_G.wav
 
 ### reese
-- ❌: reese / 808 - AU_PM_bass_synth_one_shot_dream_myth_A.wav
+- ✅: reese / reese - AU_PM_bass_synth_one_shot_dream_myth_A.wav
 - ✅: reese / reese - BOS_DBK_174_Bass_Reese_Loop_Deep_F.wav
 - ✅: reese / reese - DS_MDH_120_bass_synth_loop_toxic_sub_Gmin.wav
 - ✅: reese / reese - DS_PDH_120_bass_synth_loop_witness_reese_wide_D#min.wav
@@ -149,18 +148,19 @@ weighted avg   0.90         0.88    0.88        138
 - ✅: growl / growl - MLEUC_bass_oneshot_growl_weird_E.wav
 - ✅: growl / growl - MODE_BE2_bass_growl_solow_D#.wav
 - ✅: growl / growl - PMHJ_Bass_E_Clunk.wav
-- ❌: growl / brass - RICKYXSAN_growl_one_shot_06_F.wav
+- ❌: growl / acid - RICKYXSAN_growl_one_shot_06_F.wav
 - ✅: growl / growl - SAMPLIFIRE_bass_one_shot_growl_bounce_back_D#.wav
 - ❌: growl / brass - V_RIOT_bass_standart_growl_02_F.wav
+- ✅: growl / growl - tp_macky_gee_bass_one_shot_car_horn_F.wav
 - ✅: growl / growl - tp_macky_gee_bass_one_shot_donkey_F.wav
 
 ### 808
-- ✅: 808 / 808 - 808_VIRGLONG.wav
+- ❌: 808 / sub - 808_VIRGLONG.wav
 - ✅: 808 / 808 - 808_VIRGOANTICHRIS.wav
 - ❌: 808 / reese - 808_VIRGOCROSSS.wav
 - ✅: 808 / 808 - 808_VIRGOINDIGO.wav
 - ❌: 808 / sub - 808_VIRGOLAGO.wav
-- ❌: 808 / reese - 808_VIRGOLESTAF.wav
+- ✅: 808 / 808 - 808_VIRGOLESTAF.wav
 - ✅: 808 / 808 - 808_VIRGOSHORDIE.wav
 - ✅: 808 / 808 - 808_VIRGOSYNDICATE.wav
 - ✅: 808 / 808 - 808_VIRGSHORT.wav
@@ -182,7 +182,7 @@ weighted avg   0.90         0.88    0.88        138
 - ✅: 808 / 808 - OS_GIRL_808_E_Thud.wav
 - ✅: 808 / 808 - OS_GIRL_808_F_Dash.wav
 - ❌: 808 / reese - OS_GIRL_808_F_Growl.wav
-- ❌: 808 / reese - OS_GIRL_808_F_Slapper.wav
+- ✅: 808 / 808 - OS_GIRL_808_F_Slapper.wav
 - ✅: 808 / 808 - OS_GIRL_808_G#_Steady.wav
 - ✅: 808 / 808 - OS_GIRL_808_G_Cash.wav
 - ✅: 808 / 808 - OS_GIRL_808_G_March.wav
