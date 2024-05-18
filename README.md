@@ -23,7 +23,7 @@ growl - 17/19 ~ 89.47%
 ![alt text](https://github.com/ThaDuyx/Classify/blob/dev/main/evaluate/confusion_matrix.png?raw=true)
 
 ### ROC-Curve
-[alt text](https://github.com/ThaDuyx/Classify/blob/dev/main/evaluate/roc_curve.png?raw=true)!
+![alt text](https://github.com/ThaDuyx/Classify/blob/dev/main/evaluate/roc_curve.png?raw=true)
 
 ### Performance Metrics
 ```
