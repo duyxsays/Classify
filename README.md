@@ -22,6 +22,9 @@ growl - 17/19 ~ 89.47%
 ### Confusion Matrix
 ![alt text](https://github.com/ThaDuyx/Classify/blob/dev/main/evaluate/confusion_matrix.png?raw=true)
 
+### ROC-Curve
+[alt text](https://github.com/ThaDuyx/Classify/blob/dev/main/evaluate/roc_curve.png?raw=true)!
+
 ### Performance Metrics
 ```
               precision    recall  f1-score     support

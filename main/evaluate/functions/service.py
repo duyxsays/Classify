@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import os
-from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import confusion_matrix, classification_report, roc_curve, auc
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -69,4 +69,28 @@ def create_report(true_labels, predicted_labels):
     report = classification_report(true_labels, predicted_labels, output_dict=True)
     final_report = pd.DataFrame(report).transpose()
     print(final_report)
-    
+
+
+def create_roc_curve(binary_labels, predicted_probabilities):
+    labels = np.array(binary_labels)
+    probs = np.array(predicted_probabilities)
+
+    # calculate FPR and TPR
+    fpr, tpr, thresholds = roc_curve(labels, probs)
+
+    # calculate AUC
+    roc_auc = auc(fpr, tpr)
+
+    print("FPR:", fpr)
+    print("TPR:", tpr)
+    print("AUC-ROC:", roc_auc)
+
+    plt.figure()
+    plt.plot(fpr, tpr, color='blue', lw=2, label='ROC curve (AUC = %0.2f)' % roc_auc)
+    plt.plot([0, 1], [0, 1], color='red', linestyle='--', lw=2, label='Random Guess')
+    plt.xlabel('False Positive Rate (FPR)')
+    plt.ylabel('True Positive Rate (TPR)')
+    plt.title('Receiver Operating Characteristic (ROC) Curve')
+    plt.legend(loc='lower right')
+    plt.savefig('./roc_curve.png')
+    plt.show()

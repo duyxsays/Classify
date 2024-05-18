@@ -22,6 +22,9 @@ amount = service.total_samples(eval_dir)
 file = open(file_path, "w")
 result_list = []
 true_labels = []
+
+binary_labels = []
+probabilites = []
 predicted_labels = []
 
 for dir in os.listdir(eval_dir):
@@ -53,9 +56,13 @@ for dir in os.listdir(eval_dir):
             eval = "✅"
             correct_guesses += 1 # count amount of correct guesses
             sub_guesses += 1
+            binary_labels.append(1)
+        else:
+            binary_labels.append(0)
 
         true_labels.append(dir)
         predicted_labels.append(result['label'])
+        probabilites.append(result['score'])
         file.write(f"- {eval}: {dir} / {result['label']} - {sample}\n")
 
     result_list.append(f"{dir} - {sub_guesses}/{sub_amount} ~ {round(sub_guesses / sub_amount * 100, 2)}%")
@@ -67,6 +74,10 @@ for i in result_list:
     print(i)
 
 
+
+# %%
 service.create_confusion_matrix(true_labels, predicted_labels)
 service.create_report(true_labels, predicted_labels)
+service.create_roc_curve(binary_labels, probabilites)
+
  # %%
