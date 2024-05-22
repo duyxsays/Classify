@@ -8,19 +8,11 @@ import os
 
 # %% 
 # define the pipelines
-# "TheDuyx/distilhubert-bass-classifier5"       87.68%
-# "TheDuyx/distilhubert-bass-classifier7"       86.23%
-# "TheDuyx/distilhubert-bass-classifier8"       86.96%
-# "TheDuyx/distilhubert-bass"                   86.68%
-# "TheDuyx/distilhubert-bass-classifier9",    # 89.13%
-# "TheDuyx/distilhubert-bass3",               # 89.13%
-# "TheDuyx/distilhubert-bass4",               # 89.13%
-# "TheDuyx/distilhubert-bass6"                # 86.96%
-# "TheDuyx/distilhubert-bass7"                # 87.68%
 
 pipelines = [
-    "TheDuyx/distilhubert-bass5",               # 89.86%
-    "TheDuyx/distilhubert-bass9"                # 90.58%
+    "TheDuyx/results_fold3_2",                  # 90.58%
+    "TheDuyx/distilhubert-bass5",               # 90.58%
+    "TheDuyx/distilhubert-bass9"                # 91.3%
     ]
 
 # %%
